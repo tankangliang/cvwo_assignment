@@ -1,0 +1,18 @@
+{
+  "name": "note-api",
+  "version": "1.0.0",
+  "description": "CVWO",
+  "main": "index.js",
+  "repository": "https://github.com/tankangliang/cvwo_assignment.git",
+  "author": "tankangliang98@gmail.com <tankangliang98@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd note-app && yarn install && yarn build && cd ..",
+    "deploy": "cp -a note-app/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Note-app built!'"
+  },
+  "engines": {
+    "yarn": "1.15.2",
+    "npm": "6.13.4",
+    "node": "10.15.3"
+  },
