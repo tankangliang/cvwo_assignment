@@ -44,8 +44,9 @@ const TableData = styled.td`
 const CircledText = styled.span`
 {-moz-border-radius: 15px;
   border-radius: 20px;
-  border: 2px dotted #f44336
-  color:black;
+  border: 2px dotted #3f51b5
+
+  color:#3f51b5;
   padding-left:15px;
   padding-right:15px;
   padding-top:10px;
@@ -122,7 +123,7 @@ const Calender = (props: PropsFromRedux) => {
     }
   });
 
-  let daysinmonth = rows.map((d: JSX.Element[], i: number) => {
+  const daysinmonth = rows.map((d: JSX.Element[], i: number) => {
     return <tr key={i}>{d}</tr>;
   });
 
@@ -138,7 +139,7 @@ const Calender = (props: PropsFromRedux) => {
   };
   return (
     <div>
-      <Grid container>
+      <Grid container={true}>
         <IconButton onClick={changeMonth(-1)}>
           <ChevronLeftIcon fontSize="large" />
         </IconButton>

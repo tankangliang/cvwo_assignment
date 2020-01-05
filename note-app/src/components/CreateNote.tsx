@@ -80,7 +80,7 @@ const CreateNote = (props: IProps) => {
     }
     /* had some problem with rails where it always set the date back by 1
     and the fixes online to setting the timezone did not work so here I am */
-    let newDate = new Date();
+    const newDate = new Date();
     newDate.setDate(date!.getDate() + 1);
     const newNote: INewNote = {
       content,
@@ -109,8 +109,8 @@ const CreateNote = (props: IProps) => {
       setDate(note.dateComplete);
     }
   }, [note]);
-  const DisplayButton = ({ type }: { type: string }) => {
-    if (type === "create") {
+  const DisplayButton = (displayType: { type: string }) => {
+    if (displayType.type === "create") {
       return (
         <Button
           variant="outlined"
