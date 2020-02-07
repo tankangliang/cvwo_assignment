@@ -3,6 +3,9 @@
 Name: Tan Kang Liang
 Matric No.: A0150038R
 
+Mid Assignment Write Up -> CVWO Assignment Mid-Assignment.pdf
+Final Write Up -> CVWO Assignment Final.pdf
+
 App hosted on heroku here (will take time to start): https://thawing-atoll-33381.herokuapp.com/
 
 Code for React app can be found in directory 'note-app'
